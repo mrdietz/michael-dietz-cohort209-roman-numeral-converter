@@ -12,17 +12,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Roman Numeral Converter</h1>
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+            </div>
+                <div class="col-md-auto">
+                    <h1>Roman Numeral Converter</h1>
 
-    <form action="/script.js">
-        <label for="userNum">Input number:</label><br>
-            <input type="text" id="userNum" name="userNum" value=""><br><br>
-        <input id="userNum" type="button" onclick="convertToRoman(); randomRoman()" value="Romanize it!"></button>
-    </form><br><br>
+                    <form onsubmit="convertToRoman(); randomRoman()">
+                        <label for="userNum">Input number:</label><br>
+                            <input type="text" id="userInput" name="userNum"><br><br>
+                        <button id="romanizeButton" type="button" onclick="convertToRoman(); randomRoman()" value="Romanize it!">Romanize it!</button>
+                    </form><br><br>
 
-    <h2><span id="randomRoman"></span></h2>
-    <h3><span id="romanized"></span></h3>
-
+                    <h2><span id="randomRoman"></span></h2>
+                    <h3><span id="romanized"></span></h3>
+                </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>        
+    </div>
     <script src="script.js"></script>
+    
 </body>
 </html>

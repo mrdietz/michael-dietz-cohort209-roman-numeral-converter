@@ -1,3 +1,5 @@
+
+
 function randomRoman() {
     let famousRomans = ['Nero', 
                         'Commodus', 
@@ -14,7 +16,7 @@ function randomRoman() {
 };
 
 function convertToRoman(num) {
-    num = document.getElementById('userNum').value;
+    num = document.getElementById('userInput').value;
 
     var decValue = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
     var romanNum = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
@@ -28,7 +30,13 @@ function convertToRoman(num) {
     } 
     document.getElementById("romanized").innerHTML = result;
 };
-
+var input = document.getElementById("userInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("romanizeButton").click();
+  }
+});
 
 
 
