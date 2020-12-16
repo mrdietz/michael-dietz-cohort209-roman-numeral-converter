@@ -13,24 +13,28 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row justify-content-md-center">
+        <div class="row align-items-center justify-content-md-center">
             <div class="col col-lg-2">
+                <img src="ancient-greek-pillars.jpg" alt="pillar">
             </div>
                 <div class="col-md-auto">
                     <h1>Roman Numeral Converter</h1>
-
-                    <form onsubmit="convertToRoman(); randomRoman()">
                         <label for="userNum">Input number:</label><br>
                             <input type="text" id="userInput" name="userNum"><br><br>
-                        <button id="romanizeButton" type="button" onclick="convertToRoman(); randomRoman()" value="Romanize it!">Romanize it!</button>
-                    </form><br><br>
-
+                            <button onclick="convertToRoman(); randomRoman()" id="submitBtn" type="submit" value="Submit">Romanize it!</button><br><br> 
                     <h2><span id="randomRoman"></span></h2>
                     <h3><span id="romanized"></span></h3>
                 </div>
             <div class="col col-lg-2">
+                <img src="ancient-greek-pillars.jpg" alt="pillar">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <a href="https://www.vexels.com/vectors/preview/74984/ancient-greek-pillars"> Ancient greek pillars  </a> | designed by Vexels
             </div>
         </div>        
+        
     </div>
     <script src="script.js"></script>
     

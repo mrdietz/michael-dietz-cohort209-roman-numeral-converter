@@ -30,13 +30,6 @@ function convertToRoman(num) {
     } 
     document.getElementById("romanized").innerHTML = result;
 };
-var input = document.getElementById("userInput");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-   event.preventDefault();
-   document.getElementById("romanizeButton").click();
-  }
-});
 
 
 
